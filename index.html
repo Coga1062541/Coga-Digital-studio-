@@ -662,10 +662,10 @@ footer{border-top:1px solid var(--line);padding:50px 0 36px;}
     <div>
       <span class="eyebrow">Desarrollo web que vende, no solo se ve bonito</span>
       <h1>Tu próximo cliente está buscándote ahora mismo. <span class="accent">¿Te va a encontrar?</span></h1>
-      <p>Diseño y desarrollo sitios web que convierten visitas en clientes reales — rápidos, claros y construidos para que tu negocio venda más, no solo para verse bien. Desde $3,500-$15,000.</p>
+      <p>Diseño y desarrollo sitios web que convierten visitas en clientes reales — rápidos, claros y construidos para que tu negocio venda más, no solo para verse bien.</p>
       <div class="hero-actions">
-        <a href="#contacto" class="btn-primary">Quiero mi sitio web</a>
-        <a href="#proyectos" class="btn-ghost">Ver casos reales →</a>
+        <a href="#contacto" class="btn-primary">Quiero más clientes</a>
+        <a href="#planes" class="btn-planes">Ver planes y precios</a>
       </div>
     </div>
     <div class="laptop reveal">
@@ -676,8 +676,8 @@ footer{border-top:1px solid var(--line);padding:50px 0 36px;}
             <div class="code-editor">
               <div class="code-tabs">
                 <span class="code-tab active">index.html</span>
-                <span class="code-tab">css</span>
-                <span class="code-tab">js</span>
+                <span class="code-tab">premium.css</span>
+                <span class="code-tab">coga.js</span>
               </div>
               <div class="code-body">
                 <div class="code-nums">
@@ -688,7 +688,7 @@ footer{border-top:1px solid var(--line);padding:50px 0 36px;}
                   <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
                   <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
                 </div>
-                <div class="code-lines"><span class="c-cm">&lt;!-- COGA Digital Studio · layout --&gt;</span>
+                <div class="code-lines"><span class="c-cm">&lt;!-- COGA Digital Studio-layout --&gt;</span>
 <span class="c-tag">&lt;section</span> <span class="c-atr">id</span><span class="c-pun">=</span><span class="c-val">"hero"</span> <span class="c-atr">class</span><span class="c-pun">=</span><span class="c-val">"coga-card"</span><span class="c-tag">&gt;</span>
   <span class="c-tag">&lt;div</span> <span class="c-atr">class</span><span class="c-pun">=</span><span class="c-val">"digital-studio wrap"</span><span class="c-tag">&gt;</span>
     <span class="c-tag">&lt;h1</span> <span class="c-atr">class</span><span class="c-pun">=</span><span class="c-val">"hero__title"</span><span class="c-tag">&gt;</span><span class="c-var">Tu presencia,</span>
@@ -727,7 +727,6 @@ footer{border-top:1px solid var(--line);padding:50px 0 36px;}
     </div>
   </div>
 </section>
-
 <section id="porque">
   <div class="wrap">
     <span class="eyebrow reveal">Por qué elegirme</span>
@@ -812,55 +811,80 @@ footer{border-top:1px solid var(--line);padding:50px 0 36px;}
     <span class="eyebrow reveal">Inversión</span>
     <h2 class="section-title reveal">Planes y precios.</h2>
     <p class="section-sub reveal">Sin letra chica. Sin sorpresas. Cada plan está diseñado para el momento justo de tu negocio.</p>
-    <div class="planes-grid">
-      <!-- STARTER -->
-      <div class="plan-card reveal">
-        <p class="plan-name">Starter</p>
-        <p class="plan-price">Desde $3,500 <span>MXN</span></p>
-        <p class="plan-desc">Ideal para emprendedores o pequeños negocios que necesitan una presencia profesional en internet.</p>
-        <ul class="plan-items">
-          <li>Landing page personalizada</li>
-          <li>Diseño responsive</li>
-          <li>Formulario de contacto</li>
-          <li>Optimización básica</li>
-          <li>Entrega rápida</li>
-        </ul>
-        <a href="#contacto" class="plan-btn">Solicitar cotización</a>
+    <div class="planes-outer"><div class="planes-track-wrap">
+      <div class="planes-track" id="planesTrack">
+        <!-- BÁSICO -->
+        <div class="plan-card">
+          <p class="plan-name">Básico</p>
+          <p class="plan-price">$1,799 <span>MXN</span></p>
+          <p class="plan-desc">Para quien necesita estar en internet ya. Una página clara, rápida y profesional sin complicaciones.</p>
+          <ul class="plan-items">
+            <li>Landing page de una sola página</li>
+            <li>Hasta 5 secciones (inicio, servicios, sobre mí, contacto…)</li>
+            <li>Diseño responsive</li>
+            <li>Formulario de contacto básico</li>
+            <li>Entrega en 5–7 días hábiles</li>
+          </ul>
+          <a href="#contacto" class="plan-btn">Solicitar cotización</a>
+        </div>
+        <!-- STARTER -->
+        <div class="plan-card">
+          <p class="plan-name">Starter</p>
+          <p class="plan-price">Desde $3,500 <span>MXN</span></p>
+          <p class="plan-desc">Ideal para emprendedores o pequeños negocios que necesitan una presencia profesional en internet.</p>
+          <ul class="plan-items">
+            <li>Landing page personalizada</li>
+            <li>Diseño responsive</li>
+            <li>Formulario de contacto</li>
+            <li>Optimización básica SEO</li>
+            <li>Entrega rápida</li>
+          </ul>
+          <a href="#contacto" class="plan-btn">Solicitar cotización</a>
+        </div>
+        <!-- BUSINESS -->
+        <div class="plan-card featured">
+          <div class="plan-badge">Recomendado</div>
+          <p class="plan-name">Business</p>
+          <p class="plan-price">Desde $7,500 <span>MXN</span></p>
+          <p class="plan-desc">Para empresas que buscan una página más completa, con mejor posicionamiento y conversión.</p>
+          <ul class="plan-items">
+            <li>Sitio de 4 a 6 páginas</li>
+            <li>Diseño totalmente personalizado</li>
+            <li>Animaciones sutiles</li>
+            <li>SEO básico</li>
+            <li>Optimización de rendimiento</li>
+            <li>Integración con WhatsApp y formularios</li>
+          </ul>
+          <a href="#contacto" class="plan-btn">Solicitar cotización</a>
+        </div>
+        <!-- PREMIUM -->
+        <div class="plan-card">
+          <p class="plan-name">Premium</p>
+          <p class="plan-price">Desde $15,000 <span>MXN</span></p>
+          <p class="plan-desc">Para empresas que buscan una experiencia digital de alto nivel, sin compromisos.</p>
+          <ul class="plan-items">
+            <li>Diseño a medida</li>
+            <li>Animaciones avanzadas</li>
+            <li>Integración de IA cuando el proyecto lo requiera</li>
+            <li>Optimización completa</li>
+            <li>Soporte inicial después de la entrega</li>
+          </ul>
+          <a href="#contacto" class="plan-btn">Solicitar cotización</a>
+        </div>
       </div>
-      <!-- BUSINESS (destacado) -->
-      <div class="plan-card featured reveal">
-        <div class="plan-badge">Recomendado</div>
-        <p class="plan-name">Business</p>
-        <p class="plan-price">Desde $7,500 <span>MXN</span></p>
-        <p class="plan-desc">Para empresas que buscan una página más completa, con mejor posicionamiento y conversión.</p>
-        <ul class="plan-items">
-          <li>Sitio de 4 a 6 páginas</li>
-          <li>Diseño totalmente personalizado</li>
-          <li>Animaciones sutiles</li>
-          <li>SEO básico</li>
-          <li>Optimización de rendimiento</li>
-          <li>Integración con WhatsApp y formularios</li>
-        </ul>
-        <a href="#contacto" class="plan-btn">Solicitar cotización</a>
-      </div>
-      <!-- PREMIUM -->
-      <div class="plan-card reveal">
-        <p class="plan-name">Premium</p>
-        <p class="plan-price">Desde $15,000 <span>MXN</span></p>
-        <p class="plan-desc">Para empresas que buscan una experiencia digital de alto nivel, sin compromisos.</p>
-        <ul class="plan-items">
-          <li>Diseño a medida</li>
-          <li>Animaciones avanzadas</li>
-          <li>Integración de IA cuando el proyecto lo requiera</li>
-          <li>Optimización completa</li>
-          <li>Soporte inicial después de la entrega</li>
-        </ul>
-        <a href="#contacto" class="plan-btn">Solicitar cotización</a>
+      </div><!-- /planes-track-wrap -->
+      <div class="planes-dots" id="planesDots">
+        <span class="planes-dot"></span>
+        <span class="planes-dot"></span>
+        <span class="planes-dot"></span>
+        <span class="planes-dot"></span>
       </div>
     </div>
     <p class="planes-note reveal">¿Necesitas un proyecto con funciones especiales? También realizo cotizaciones completamente personalizadas según los objetivos y necesidades de tu negocio.</p>
   </div>
 </section>
+
+  
 <section id="proceso">
   <div class="wrap">
     <span class="eyebrow reveal">Cómo trabajo</span>
