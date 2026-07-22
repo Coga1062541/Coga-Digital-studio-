@@ -218,8 +218,9 @@ nav{display:flex;align-items:center;justify-content:space-between;}
 .hud span{color:var(--accent);}
 
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:64px;}
-.why-card{padding:28px 24px;transition:transform var(--t-med) var(--ease),border-color var(--t-med) ease,box-shadow var(--t-med) ease;}
-.why-card:hover{transform:scale(1.02);box-shadow:0 20px 56px -12px rgba(0,0,0,.4);}
+.why-card{padding:28px 24px;transition:transform var(--t-med) var(--ease),border-color var(--t-med) ease,box-shadow var(--t-med) ease,filter var(--t-med) ease,opacity var(--t-med) ease;}
+.why-card:hover{transform:scale(1.05);box-shadow:0 20px 56px -12px rgba(0,0,0,.4);z-index:2;}
+.grid-4:hover>.why-card:not(:hover){filter:blur(6px);transform:scale(.96);opacity:.55;}
 .why-card .ic{font-size:22px;margin-bottom:14px;opacity:.6;}
 .why-card h3{font-family:var(--font);font-size:16px;font-weight:600;margin-bottom:10px;letter-spacing:-.01em;}
 .why-card p{font-size:13.5px;color:var(--text-2);line-height:1.65;}
